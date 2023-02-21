@@ -5,16 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
   
   <title>Frontend Mentor | Interactive card details form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
 <body>
+  <section class="container">
+    <div class="left_section"></div>
+    <div class="right_section">
+      <form method="post">
+        <label for="card_holderName">CARDHOLDER NAME</label>
+        <input type="text" placeholder="eg Thomas Gasangwa" id="card_holderName" required>
+        <label for="card_Number">CARD NUMBER</label>
+        <input type="text" placeholder="123457896736" id="card_Number" required>
+        <label for="card_expiry">EXP.DATE(MM/YY)
+          <input type="month" placeholder="MM" id="month" required>
+          <input type="year" placeholder="YY" id="year" required>
+        </label>
+      </form>
+    </div>
+  </section>
 
   <!-- 0000 0000 0000 0000
   Jane Appleseed
