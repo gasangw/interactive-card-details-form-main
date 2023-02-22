@@ -17,21 +17,31 @@
 </head>
 <body>
   <section class="container">
-    <div class="left_section"></div>
+    <div class="left_section">
+      <p>hello</p>
+    </div>
     <div class="right_section">
-      <form method="post">
+      <form method="post" class="form">
         <label for="card_holderName">CARDHOLDER NAME</label>
         <input type="text" placeholder="eg Thomas Gasangwa" id="card_holderName" required>
         <label for="card_Number">CARD NUMBER</label>
-        <input type="text" placeholder="123457896736" id="card_Number" required>
-        <label for="card_expiry">EXP.DATE(MM/YY)
-          <input type="month" placeholder="MM" id="month" required>
-          <input type="year" placeholder="YY" id="year" required>
-        </label>
+        <input type="text" placeholder="eg. 123457896736" id="card_Number" required>
+        <div class="mylabels">
+          <label for="card_expiry">EXP.DATE(MM/YY)</label>
+          <label for="cvc">CVC</label>
+        </div>
+        <div class="month-year">
+          <div class="only-dates">
+            <input type="text" placeholder="MM" id="month" required>
+            <input type="text" placeholder="YY" id="year" required>
+          </div>
+          <div class="cvc">
+            <input type="text" placeholder="cvc" id="cvc" required>
+          </div>
+        </div>
       </form>
     </div>
   </section>
-
   <!-- 0000 0000 0000 0000
   Jane Appleseed
   00/00
@@ -59,9 +69,9 @@
   We've added your card details
   Continue  -->
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Thomas Gasangwa</a>.
-  </div>
+  </div> -->
 </body>
 </html>

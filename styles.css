@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+}
+
+.left_section {
+    background-image: url(./images/bg-main-desktop.png);
+    height: 100vh;
+}
+
+.form {
+    display: flex;
+    border: 1px solid red;
+    flex-direction: column;
+    margin-left: 16rem;
+    width: 40%;
+    height: 60vh;
+    gap: 0.6rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.forms-inputs {
+    display: flex;
+    justify-content: baseline;
+}
+
+input {
+    border-radius: 5px;
+    width: 60%;
+    margin-right: auto;
+    padding: 0.2rem;
+}
+
+label {
+  font-size: 0.8rem;
+  margin-right: auto;
+}
+
+.month-year {
+  display: grid;
+ align-items: baseline;
+ border: 1px solid red;
+  grid-template-columns: 1fr 1fr;
+}
+
+.only-dates {
+  display: block;
+}
+
+.mylabels {
+  display: flex;
+  gap: 2rem;
+}
+
+#cvc {
+ display: block;
+}
+
+#month {
+    width: 10%;
+}
+
+#year {
+    width: 10%; 
+}
